@@ -1,0 +1,32 @@
+# EDNEY  :   
+## EDNEY
+### EDNEY
+### EDNEY
+#### EDNEY
+##### EDNEY
+###### EDNEY
+
+ITALIC/BOLD(NEGRITO)
+***inicializar INICIALIZAR***
+
+
+Italico
+_Edney_
+
+
+BOLD
+**INICIALIZAR** 
+
+
+> EDNEY
+
+CHECK BOX
+- [X] EDNEY
+
+ORDER LIST
+
+1. EDNEY
+
+* EDNEY
+
+- EDNEY
