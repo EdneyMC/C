@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="edney_000"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-15 12:13:24 "/>
+        <attribute name="created" value="ZWRuZXlfMDAwO1BST0dSQU1NRVI7MjAyMi0wNi0xNTsiMTI6MDQ6MjYgIjsyNzI0"/>
+        <attribute name="edited" value="ZWRuZXlfMDAwO1BST0dSQU1NRVI7MjAyMi0wNi0xNTsiMTI6MTM6MjQgIjs0OzI4MzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celsius, fahrenheit" type="Real" array="False" size=""/>
+            <input variable="celsius"/>
+            <assign variable="fahrenheit" expression="(9*celsius+160)/5"/>
+            <output expression="&quot;A temperatura em fahrenheit &#233;: &quot;&amp;fahrenheit&amp;&quot;&#176;F&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
