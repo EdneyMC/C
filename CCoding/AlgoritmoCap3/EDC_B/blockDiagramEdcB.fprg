@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="edney_000"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-16 09:55:24 "/>
+        <attribute name="created" value="ZWRuZXlfMDAwO1BST0dSQU1NRVI7MjAyMi0wNi0xNjsiMDk6NDc6MDYgIjsyNzM2"/>
+        <attribute name="edited" value="ZWRuZXlfMDAwO1BST0dSQU1NRVI7MjAyMi0wNi0xNjsiMDk6NTU6MjQgIjsxOzI4NDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celsius, fahrenheit" type="Real" array="False" size=""/>
+            <input variable="fahrenheit"/>
+            <assign variable="celsius" expression="((fahrenheit-32)*5)/9"/>
+            <output expression="&quot;A temperatura em graus Celsius &#233;: &quot;&amp;celsius&amp;&quot;&#176;C.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
