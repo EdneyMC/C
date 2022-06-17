@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="edney_000"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-17 03:23:55 "/>
+        <attribute name="created" value="ZWRuZXlfMDAwO1BST0dSQU1NRVI7MjAyMi0wNi0xNzsiMDE6NTQ6NDUgIjsyNzMw"/>
+        <attribute name="edited" value="ZWRuZXlfMDAwO1BST0dSQU1NRVI7MjAyMi0wNi0xNzsiMDM6MjM6NTUgIjsyOzI4Mzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rTamBase, hTamAltura, volumeCm3, volumeMt3, volumeLt" type="Real" array="False" size=""/>
+            <output expression="&quot;CALCULO DE AREA DE CILINDRO E CONVERS&#195;O EM LITROS&quot;" newline="True"/>
+            <output expression="&quot;Insira em cent&#237;metros (cm), o tamanho do raio da base do cilindro (Dica: raio=diametro da base / 2): &quot;" newline="True"/>
+            <input variable="rTamBase"/>
+            <output expression="&quot;Insira em cent&#237;metros (cm), o tamanho da altura do cilindro: &quot;" newline="True"/>
+            <input variable="hTamAltura"/>
+            <assign variable="volumeCm3" expression="pi * rTamBase^2 * hTamAltura"/>
+            <assign variable="volumeMt3" expression="volumeCm3 / 1000000"/>
+            <assign variable="volumeLt" expression="volumeMt3 * 1000"/>
+            <output expression="&quot;O volume total do cilindro em centimetros cubicos eh: &quot;&amp;volumeCm3&amp;&quot;cm3&quot;" newline="True"/>
+            <output expression="&quot;O volume total do cilindro em metros cubicos eh: &quot;&amp;volumeMt3&amp;&quot;mt3&quot;" newline="True"/>
+            <output expression="&quot;O volume total do cilindro em litros eh: &quot;&amp;volumeLt&amp;&quot;Lt&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
