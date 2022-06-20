@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="edney_000"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-20 10:35:13 "/>
+        <attribute name="created" value="ZWRuZXlfMDAwO1BST0dSQU1NRVI7MjAyMi0wNi0yMDsiMDk6MjA6MzIgIjsyNzIx"/>
+        <attribute name="edited" value="ZWRuZXlfMDAwO1BST0dSQU1NRVI7MjAyMi0wNi0yMDsiMTA6MzU6MTMgIjsyOzI4Mjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tempoMin, velMediaKmHora, kmLitro, tempoSeg, velMediaKmSeg, distPercorrida, consumoLitro" type="Real" array="False" size=""/>
+            <assign variable="kmLitro" expression="12"/>
+            <output expression="&quot;CALCULO CONSUMO DE COMBUSTIVEL POR VIAGEM&quot;" newline="True"/>
+            <output expression="&quot;Insira o tempo de dura&#231;&#227;o da viagem (minutos): &quot;" newline="True"/>
+            <input variable="tempoMin"/>
+            <output expression="&quot;Insira a velocidade m&#233;dia realizada na viagem (km/h): &quot;" newline="True"/>
+            <input variable="velMediaKmHora"/>
+            <assign variable="tempoSeg" expression="tempoMin * 60"/>
+            <assign variable="velMediaKmSeg" expression="velMediaKmHora / 3600"/>
+            <assign variable="distPercorrida" expression="tempoSeg * velMediaKmSeg"/>
+            <assign variable="consumoLitro" expression="distPercorrida / kmLitro"/>
+            <output expression="&quot;RESUMO DA VIAGEM&quot;" newline="True"/>
+            <output expression="&quot;Velocidade m&#233;dia: &quot;&amp;velMediaKmHora&amp;&quot; km/h.&quot;" newline="True"/>
+            <output expression="&quot;Tempo gasto: &quot;&amp;tempoMin&amp;&quot; minutos.&quot;" newline="True"/>
+            <output expression="&quot;Dist&#226;ncia percorrida: &quot;&amp;distPercorrida&amp;&quot; km.&quot;" newline="True"/>
+            <output expression="&quot;Quantidade de combust&#237;vel utilzada: &quot;&amp;consumoLitro&amp;&quot; litro(s).&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
