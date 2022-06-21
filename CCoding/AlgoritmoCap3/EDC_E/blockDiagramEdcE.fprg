@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="edney_000"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-21 11:02:14 "/>
+        <attribute name="created" value="ZWRuZXlfMDAwO1BST0dSQU1NRVI7MjAyMi0wNi0yMTsiMTA6MTQ6MzYgIjsyNzIx"/>
+        <attribute name="edited" value="ZWRuZXlfMDAwO1BST0dSQU1NRVI7MjAyMi0wNi0yMTsiMTE6MDI6MTQgIjsxOzI4MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valorOrigBoleto, taxaJurosSimples, boletoAtualizado" type="Real" array="False" size=""/>
+            <declare name="tempoAtraso" type="Integer" array="False" size=""/>
+            <output expression="&quot;CALCULO DE JUROS SIMPLES DE PRESTA&#199;OES EM ATRASO&quot;" newline="True"/>
+            <output expression="&quot;Insira o valor original da presta&#231;&#227;o em atraso: &quot;" newline="True"/>
+            <input variable="valorOrigBoleto"/>
+            <output expression="&quot;Insira o total de dias corridos, desde um dia ap&#243;s o vencimento da parcela, at&#233; a data atual: &quot;" newline="True"/>
+            <input variable="tempoAtraso"/>
+            <output expression="&quot;Insira a taxa de juros ao dia, informada no campo observa&#231;&#245;es do boleto: &quot;" newline="True"/>
+            <input variable="taxaJurosSimples"/>
+            <assign variable="boletoAtualizado" expression="valorOrigBoleto + (valorOrigBoleto * (taxaJurosSimples/100) * tempoAtraso)"/>
+            <output expression="&quot;O valor atualizado da parcela para pagamento hoje &#233;: &quot;&amp;boletoAtualizado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
