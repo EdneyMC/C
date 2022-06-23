@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="edney_000"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-22 10:52:01 "/>
+        <attribute name="created" value="ZWRuZXlfMDAwO1BST0dSQU1NRVI7MjAyMi0wNi0yMjsiMTA6NDU6MjEgIjsyNzIw"/>
+        <attribute name="edited" value="ZWRuZXlfMDAwO1BST0dSQU1NRVI7MjAyMi0wNi0yMjsiMTA6NTI6MDEgIjsxOzI4MjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, apoioTrocaValor" type="Real" array="False" size=""/>
+            <output expression="&quot;TROCA DE VALORES&quot;" newline="True"/>
+            <output expression="&quot;Insira um valor para A: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Insira um valor para B: &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;A = &quot;&amp;a" newline="True"/>
+            <output expression="&quot;B = &quot;&amp;b" newline="True"/>
+            <assign variable="apoioTrocaValor" expression="a"/>
+            <assign variable="a" expression="b"/>
+            <assign variable="b" expression="apoioTrocaValor"/>
+            <output expression="&quot;VALORES SUBSTITUIDOS:&quot;" newline="True"/>
+            <output expression="&quot;A = &quot;&amp;a" newline="True"/>
+            <output expression="&quot;B = &quot;&amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
